@@ -8,7 +8,6 @@ import commonStyles from '../utils/commonStyles'
 export default props => {
     let check = null
     if (props.doneAt !== null) {
-        console.log("Aqui tbm")
         check = (
             <View style={styles.done} >
                 <Icon

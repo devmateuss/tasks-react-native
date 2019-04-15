@@ -24,17 +24,17 @@ export default class componentName extends Component {
             }
         ]
     }
-
     toggleTask = id => {
         const tasks = this.state.tasks.map(task => {
             if (task.id === id) {
                 task = { ...task }
-                task.doneAt = task.doneAt ? null : new Date();
+                task.doneAt = task.doneAt ? null : new Date()
             }
             return task
         })
         this.setState({ tasks })
     }
+
     render() {
         return (
             <View style={styles.container}>
